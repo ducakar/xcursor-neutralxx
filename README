@@ -1,0 +1,41 @@
+Neutral++ xcursor theme
+=======================
+
+It is based on Neutral (and jaguarx) theme. Changes:
+- left_ptr_watch changed (looks almost per-pixel like in Neutral Plus theme)
+- watch is the same as left_ptr_watch
+- d&d cursors are replaced by more 'standard' cursors (e.g. dnd-copy replaced by copy etc.)
+- window resizing cursors are unified (i.e. double arrows everywhere)
+- circle taken from jaguarx theme (only the circle by the arrow, not the whole cursor, since the shadow differs)
+- crossed_circle replaced by circle
+- for all arrows and pencil hotspots have been moved to the very tip (top-left-most white pixel)
+- removed dot anomaly on bottom border of hand cursor
+- duplicates have mostly been symlinked instead of copied
+- added symlinks for missing kde-specific cursors
+- added blank cursor (kde-specific)
+- build script improved and cleaned up
+
+Changed files:
+- left_ptr_watch*
+- circle.png
+- all arrow-related *.in files (hotspot): circle.in, copy.in, left_ptr.in, link.in, move.in, question_arrow.in, right_ptr.in
+- pencil.in (hotspot)
+- hand.*
+- index.theme
+- added blank.*
+- many other files copied/renamed/deleted
+
+ChangeLog:
+- 1.0.1: added top_side, bottom_side, left_side and right_side
+- 1.0.2: dnd-none symlinked to left_ptr, dnd-ask added
+- 1.0.3: Multiple symlinks added/adjusted, fixed .theme file
+
+Compiling:
+Go to source subdirectory and run ./make.sh script.
+
+Thanks to Alexey Nikitine for the Neutral, Björn Janßen for the Neutral Plus and the unknown author for the jaguarx theme.
+
+Neutral, jaguarx and Neutral++ are all covered by Aristic License
+(see LICENSE file) and can be found on http://www.kde-look.org/.
+
+Davorin Učakar <davorin.ucakar@gmail.com>, 6th of January 2015
